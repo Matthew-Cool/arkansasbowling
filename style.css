@@ -1,0 +1,65 @@
+/* GENERAL PAGE SETTINGS */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9D2235;
+    padding: 0 40px;
+    height: 90px;
+}
+
+/* LOGO */
+
+.logo {
+    height: 100%;
+}
+
+/* NAV LINKS */
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    color: #9D2235;
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #444;
+}
+
+/* PAGE CONTENT */
+
+.content {
+    padding: 80px 40px;
+    max-width: 900px;
+    margin: auto;
+}
