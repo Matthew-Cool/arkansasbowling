@@ -51,6 +51,10 @@
     margin-top: 10px;
 }
 
+.partner-button:hover {
+    background-color: #f3f3f3;
+}
+
 /* mobile */
 @media (max-width: 768px) {
 

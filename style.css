@@ -173,32 +173,12 @@ img {
     margin-top: 10px;
 }
 
+.feature-button:hover {
+    background-color: #f3f3f3;
+}
+
 .feature-box-reverse {
     flex-direction: row-reverse;
-}
-
-/* HERO SECTION */
-
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-}
-
-/* HERO HEADER BOX */
-
-.hero h1 {
-    display: inline-block;
-    background-color: #A41F35;
-    color: white;
-    padding: 25px 40px;
-    border-radius: 12px;
-    margin: 0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.hero p {
-    font-size: 20px;
-    color: white;
 }
 
 /* WELCOME BOX */
@@ -251,7 +231,7 @@ img {
     background-color: #A41F35;
     color: white;
     padding: 20px 40px;
-    margin-top: 80px;
+    margin-top: 0px;
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;

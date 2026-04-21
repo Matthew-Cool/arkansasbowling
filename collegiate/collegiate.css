@@ -8,3 +8,7 @@
     text-decoration: none;
     margin-top: 10px;
 }
+
+.uarkadm-button:hover {
+    background-color: #f3f3f3;
+}
