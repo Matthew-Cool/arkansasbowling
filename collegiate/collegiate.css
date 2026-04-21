@@ -1,0 +1,10 @@
+.uarkadm-button {
+    display: inline-block;
+    background-color: white;
+    color: #A41F35;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}

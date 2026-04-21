@@ -82,9 +82,10 @@ img {
 
 .home {
     position: relative;
-    width: calc(100% - 30px);
-    max-width: 700px;
+    width: 100%;
+    max-width: 900px;
     margin: 20px auto;
+    padding: 0px 10px;
 }
 
 .home-image {
@@ -489,10 +490,11 @@ img {
     }
 }
 
-/* mobile home h1 */
+/* mobile home */
 @media (max-width: 768px) {
     .home {
-        width: calc(100% - 24px);
+        max-width: 900px;
         margin: 24px auto;
+        padding: 0px 10px;
     } 
 }
