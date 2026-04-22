@@ -12,3 +12,88 @@
 .uarkadm-button:hover {
     background-color: #f3f3f3;
 }
+
+/* ball BOX */
+
+.ball-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #A41F35;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1100px;
+    overflow: hidden;
+}
+
+.ball-box-reverse {
+    flex-direction: row-reverse;
+}
+
+.ball-image {
+    display: block;
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: 220px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* TEXT SIDE */
+
+.ball-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.ball-text h2 {
+    margin-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35) !important;
+}
+
+.ball-button {
+    display: inline-block;
+    background-color: white;
+    color: #A41F35;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.ball-button:hover {
+    background-color: #f3f3f3;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .ball-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    .ball-box-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .ball-image {
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px;
+        height: 160px;
+        margin: 0 auto 10px auto;
+    }
+
+    .ball-text {
+        width: 100%;
+    }
+
+    .ball-button {
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
