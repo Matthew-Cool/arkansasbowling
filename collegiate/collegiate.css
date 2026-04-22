@@ -27,8 +27,17 @@
     overflow: hidden;
 }
 
+/* tournament version: text left, bag right on desktop */
 .ball-box-reverse {
-    flex-direction: row-reverse;
+    flex-direction: row;
+}
+
+.ball-box-reverse .ball-text {
+    order: 1;
+}
+
+.ball-box-reverse .ball-image {
+    order: 2;
 }
 
 .ball-image {
@@ -76,8 +85,17 @@
         padding: 25px 20px;
     }
 
+    /* tournament version: bag top, text bottom on mobile */
     .ball-box-reverse {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .ball-box-reverse .ball-image {
+        order: 1;
+    }
+
+    .ball-box-reverse .ball-text {
+        order: 2;
     }
 
     .ball-image {
