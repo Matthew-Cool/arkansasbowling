@@ -1,0 +1,151 @@
+.dono-button {
+    display: inline-block;
+    background-color: white;
+    color: #A41F35;
+    padding: 16px 34px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+    animation: donation-bounce 2s ease-in-out infinite;
+}
+
+.dono-button:hover {
+    background-color: #DDDDDD;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    animation-play-state: paused;
+}
+
+@keyframes donation-bounce {
+    0%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    85% {
+        transform: translateY(-8px);
+    }
+
+    90% {
+        transform: translateY(0);
+    }
+
+    95% {
+        transform: translateY(-4px);
+    }
+}
+
+.padding {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0px 10px;
+}
+
+/* ball BOX */
+
+.ball-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #A41F35;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1100px;
+    overflow: hidden;
+}
+
+/* tournament version: text left, bag right on desktop */
+.ball-box-reverse {
+    flex-direction: row;
+}
+
+.ball-box-reverse .ball-text {
+    order: 1;
+}
+
+.ball-box-reverse .ball-image {
+    order: 2;
+}
+
+.ball-image {
+    display: block;
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    height: 220px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* TEXT SIDE */
+
+.ball-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.ball-text h2 {
+    margin-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35) !important;
+}
+
+.ball-button {
+    display: inline-block;
+    background-color: white;
+    color: #A41F35;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.ball-button:hover {
+    background-color: #f3f3f3;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .ball-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 20px;
+    }
+
+    /* tournament version: bag top, text bottom on mobile */
+    .ball-box-reverse {
+        flex-direction: column;
+    }
+
+    .ball-box-reverse .ball-image {
+        order: 1;
+    }
+
+    .ball-box-reverse .ball-text {
+        order: 2;
+    }
+
+    .ball-image {
+        width: 160px;
+        min-width: 160px;
+        max-width: 160px;
+        height: 160px;
+        margin: 0 auto 10px auto;
+    }
+
+    .ball-text {
+        width: 100%;
+    }
+
+    .ball-button {
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
