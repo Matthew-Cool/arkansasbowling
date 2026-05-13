@@ -116,10 +116,50 @@
     }
 }
 
-.coming-soon-text {
-    text-align: center;
-    font-size: 1.2rem;
+.interest-button {
+    display: inline-block;
+    background-color: white;
+    color: #A41F35;
+    padding: 16px 34px;
+    border-radius: 12px;
     font-weight: 800;
-    color: white;
-    margin: 25px auto;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+    animation: interest-bounce 2s ease-in-out infinite;
+}
+
+.interest-button:hover {
+    background-color: #DDDDDD;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    animation-play-state: paused;
+}
+
+@keyframes interest-bounce {
+    0%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    85% {
+        transform: translateY(-8px);
+    }
+
+    90% {
+        transform: translateY(0);
+    }
+
+    95% {
+        transform: translateY(-4px);
+    }
+}
+
+@media (max-width: 768px) {
+    .interest-button {
+        font-size: 1.05rem;
+        padding: 14px 24px;
+    }
 }
