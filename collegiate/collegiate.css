@@ -139,6 +139,19 @@
     animation-play-state: paused;
 }
 
+.collegiate-email {
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.35rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.collegiate-email:hover {
+    text-decoration: underline;
+}
+
 @keyframes interest-bounce {
     0%, 80%, 100% {
         transform: translateY(0);
