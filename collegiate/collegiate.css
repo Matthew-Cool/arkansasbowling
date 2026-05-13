@@ -152,6 +152,96 @@
     text-decoration: underline;
 }
 
+.tryout-alert-box {
+    position: relative;
+    max-width: 900px;
+    margin: 35px auto;
+    background-color: #A41F35;
+    color: white;
+    border: 3px solid white;
+    border-radius: 18px;
+    padding: 45px 28px 28px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+    animation: tryoutPulse 3s ease-in-out infinite;
+}
+
+.new-badge {
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    background-color: white;
+    color: #A41F35;
+    font-weight: 900;
+    font-size: 1.05rem;
+    padding: 10px 18px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    transform: rotate(-25deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid #A41F35;
+}
+
+.tryout-alert-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.tryout-alert-text p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.tryout-alert-button {
+    display: inline-block;
+    background-color: white;
+    color: #A41F35;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.tryout-alert-button:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes tryoutPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.015);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tryout-alert-box {
+        margin: 25px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .tryout-alert-button {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .new-badge {
+        top: 13px;
+        left: 5px;
+        font-size: 0.95rem;
+        padding: 8px 15px;
+    }
+}
+
 @keyframes interest-bounce {
     0%, 80%, 100% {
         transform: translateY(0);
