@@ -47,6 +47,15 @@
     text-align: center;
 }
 
+.video-note {
+    font-size: 20px !important;
+    line-height: 1.5;
+}
+
+.video-note b {
+    color: white;
+}
+
 @media (max-width: 768px) {
     .google-form-box {
         padding: 10px;
